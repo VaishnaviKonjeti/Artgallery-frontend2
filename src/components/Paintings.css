@@ -1,0 +1,41 @@
+/* paintings.css */
+
+/* Ensure images fit within their containers */
+.painting-item img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Ensure images don't have extra space underneath */
+}
+
+.paintings-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 60px; /* Adjust for the height of the fixed navbar */
+  gap: 20px; /* Add some gap between painting items */
+}
+
+.painting-item {
+  border: 1px solid #ffffff;
+  padding: 10px;
+  width: 300px;
+  box-sizing: border-box; /* Include padding in the width */
+  margin-bottom: 20px; /* Increase bottom margin to create space between items */
+}
+
+.painting-item h3 {
+  margin-top: 0;
+}
+
+.painting-item button {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.painting-item button:hover {
+  background-color: #333333; /* Adjust the hover color for better contrast */
+}

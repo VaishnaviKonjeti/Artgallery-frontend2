@@ -1,0 +1,42 @@
+/* drawings.css */
+
+/* Ensure images fit within their containers */
+.drawing-item img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Ensure images don't have extra space underneath */
+  }
+  
+  .drawings-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 60px; /* Adjust for the height of the fixed navbar */
+    gap: 20px; /* Add some gap between drawing items */
+  }
+  
+  .drawing-item {
+    border: 1px solid #ffffff;
+    padding: 10px;
+    width: 300px;
+    box-sizing: border-box; /* Include padding in the width */
+    margin-bottom: 20px; /* Increase bottom margin to create space between items */
+  }
+  
+  .drawing-item h3 {
+    margin-top: 0;
+  }
+  
+  .drawing-item button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .drawing-item button:hover {
+    background-color: #333333; /* Adjust the hover color for better contrast */
+  }
+  

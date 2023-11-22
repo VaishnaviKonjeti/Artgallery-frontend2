@@ -1,0 +1,36 @@
+body{
+  background-color: white;
+}
+.circle-images-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px; /* Add padding for space */
+  max-width: 800px; /* Set a maximum width for the container */
+  margin: 0 auto; /* Center the container */
+}
+
+/* Styling for each circle image */
+.circle-image-container {
+  text-align: center;
+  flex-basis: 30%; /* Adjust width for each circle */
+  margin-bottom: 20px; /* Add space below each circle */
+}
+
+.circle-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%; /* Creates a circular shape */
+  object-fit: cover; /* Ensures the image covers the container */
+}
+
+.circle-image:hover {
+  /* Example hover effect */
+  transform: scale(1.1);
+}
+
+/* Styling for the text underneath */
+.circle-image-container p {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 5px 0 0; /* Adjust top margin for text */
+}

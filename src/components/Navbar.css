@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fcfcfc;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #ffffff; /* Set background color to white */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    color: #000000; /* Set text color to black */
+    z-index: 999;
+    font-family: 'Avenir Next LT Pro Light', sans-serif;
+}
+
+.logo img {
+    max-height: 60px;
+    width: auto;
+}
+
+.logo {
+    font-size: 32px;
+}
+
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu li {
+    padding: 5px 14px;
+    background-color: #ffffff;
+    list-style: none;
+    font-family: 'Avenir Next LT Pro Light', sans-serif;
+}
+
+.menu li a {
+    text-decoration: none; /* Remove default underline */
+    color: #000000; /* Set text color to black */
+    font-family: 'Avenir Next LT Pro Light', sans-serif;
+}
+
+.menu li:hover {
+    background-color: #ffffff;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.services {
+    position: relative;
+    font-family: 'Avenir Next LT Pro Light', sans-serif;
+}
+
+.dropdown {
+    background-color: #ffffff;
+    padding: 1em 0;
+    position: absolute;
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+}
+
+.dropdown li + li {
+    margin-top: 10px;
+}
+
+.dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+    font-family: 'Avenir Next LT Pro Light', sans-serif;
+}
+
+.dropdown li:hover {
+    background-color: #ffffff;
+}
+
+.services:hover .dropdown {
+    display: block;
+}
+
+.navbar a,
+.menu li a {
+    text-decoration: none; /* Remove default underline */
+    color: #000000; /* Set text color to black */
+    font-family: 'Avenir Next LT Pro Light', sans-serif;
+}
+
+.navbar a:hover,
+.menu li a:hover {
+    text-decoration: none; /* Remove underline on hover */
+    color: #000000; /* Set text color to black on hover */
+}
